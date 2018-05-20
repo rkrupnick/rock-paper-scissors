@@ -1,14 +1,29 @@
+const rock = document.querySelector('#rock'),
+      paper = document.querySelector('#paper'),
+      scissors = document.querySelector('#scissors'),
+      results = document.querySelector('#results');
+
 let computerSelection,
     playerSelection;
 
-function game() {
-  let round = 1;
-  while (round < 6) {
-    computerSelection = computerPlay();
-    playerSelection = prompt("Rock, paper, or scissors?");
-    console.log(playRound(playerSelection, computerSelection));
-    round += 1;
-  }
+rock.addEventListener('click', function() {
+  playerSelection = 'rock';
+  playGame();
+});
+
+paper.addEventListener('click', function() {
+  playerSelection = 'paper';
+  playGame();
+});
+
+scissors.addEventListener('click', function() {
+  playerSelection = 'scissors';
+  playGame();
+});
+
+function playGame() {
+  computerSelection = computerPlay();
+  results.innerText = playRound(playerSelection, computerSelection);
 }
 
 function computerPlay() {

@@ -1,0 +1,9 @@
+.container {
+  width: 800px;
+}
+
+.choice {
+  margin: 10px;
+  height: 200px;
+  font-size: 2em;
+}
