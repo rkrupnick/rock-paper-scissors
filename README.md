@@ -1,6 +1,7 @@
 # Rock Paper Scissors
 
 ## Rock Paper Scissor game made in Javascript for The Odin Project
+This project was made with Bootstrap and Vanilla JavaScript.
 
 ### You have the option to play traditional [Rock Paper Scissors](https://rkrupnick.github.io/rock-paper-scissors/index.html)...
 
